@@ -30,7 +30,7 @@ public WebDriver driver=null;
 			cap.setPlatform(Platform.ANY);
 		}
 		
-		driver = new RemoteWebDriver(new URL("http://192.168.99.100:32768/wd/hub"), cap);
+		driver = new RemoteWebDriver(new URL("http://0.0.0.0:4444/wd/hub"), cap);
 		
 		driver.get("https://www.google.ro/");
 		driver.findElement(By.name("q")).sendKeys("Hello "+b);
